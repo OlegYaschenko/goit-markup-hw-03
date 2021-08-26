@@ -5,6 +5,8 @@
   --primary-white-color: #ffffff;
   --background-color: #2f303a;
   --secondary-bg-color: #f5f4fa;
+  --primary-border-color: #ececec;
+  --secondary-border-color: #eeeeee;
 
   --card-set-gap: 30px;
 }
@@ -55,7 +57,15 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.link.current {
+  color: var(--accent-color);
+}
 /* ------------Header---------- */
+.header {
+  border-bottom: 1px solid var(--primary-border-color);
+}
+
 .nav-header {
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -321,6 +331,7 @@ ul {
 }
 
 .button {
+  border: none;
   cursor: pointer;
 }
 
@@ -331,4 +342,6 @@ ul {
 .project-item-card {
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
+  width: 370px;
+  border: 1px solid var(--secondary-border-color);
 }
